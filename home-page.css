@@ -1,0 +1,444 @@
+.main_area .icon_sty{
+    /*max-height: 120px;*/
+    width: 158px;
+    width: 164px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.main_area .icon_sty div{
+    width: 65px;
+    height: 65px;
+    box-shadow: 0px 0px 5px 5px #EEF1F5;
+    border-radius: 5px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.main_area .icon_sty div::before, .main_area .icon_sty div::after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    display: block;
+    transition: 1s;
+    position: absolute;
+}
+.main_area .icon_sty div::before{
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+
+}
+.main_area .icon_sty div::after{
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    bottom: 0px;
+    right: 0px;
+}
+.main_area .icon_sty:hover div::before, .main_area .icon_sty:hover div::after{
+    width: 65px;
+    height: 65px;
+    border-color: #1E70B9;
+    border-radius: 5px;
+}
+.main_area .icon_sty:hover div{
+    transition: 1.5s;
+    box-shadow: none;
+    background-color: #EEF1F5;
+}
+.main_area .icon_sty span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    width: 85%;
+    width: 140px;
+    display: block;
+    margin: 0px auto;
+}
+.icon_sty .plagiarism_checker{background-image: url(../webimages/plagiarism_checker.svg);}
+.icon_sty .article_rewriter{background-image: url(../webimages/article_rewriter.svg);}
+.icon_sty .garammar_checker{background-image: url(../webimages/grammar_checker.svg);}
+.icon_sty .word_counter{background-image: url(../webimages/word_counter.svg);}
+.icon_sty .spell_checker{background-image: url(../webimages/spell_checker.svg);}
+.icon_sty .paraphrasing{background-image: url(../webimages/paraphrasing.svg);}
+.icon_sty .md5_generator{background-image: url(../webimages/md5_generator.svg);}
+.icon_sty .uppercase{background-image: url(../webimages/uppercase.svg);}
+.icon_sty .word_combiner{background-image: url(../webimages/word_combiner.svg);}
+.icon_sty .img_text{background-image: url(../webimages/img_text.svg);}
+.icon_sty .translate_english{background-image: url(../webimages/translate_english.svg);}
+.icon_sty .text_img{background-image: url(../webimages/text_img.svg);}
+.icon_sty .reverse_img{background-image: url(../webimages/reverse_img.svg);}
+.icon_sty .logo_maker{background-image: url(../webimages/logo_maker.svg);}
+.icon_sty .img_compression{background-image: url(../webimages/img_compression.svg);}
+.icon_sty .favicon_generator{background-image: url(../webimages/favicon_generator.svg);}
+.icon_sty .video_gif{background-image: url(../webimages/video_gif.svg);}
+.icon_sty .img_resizer{background-image: url(../webimages/img_resizer.svg);}
+.icon_sty .crop_img{background-image: url(../webimages/crop_img.svg);}
+.icon_sty .convert_jpg{background-image: url(../webimages/convert_jpg.svg);}
+.icon_sty .rgb_hex{background-image: url(../webimages/rgb_hex.svg);}
+.icon_sty .png_jpg{background-image: url(../webimages/png_jpg.svg);}
+.icon_sty .jpg_png{background-image: url(../webimages/jpg_png.svg);}
+.icon_sty .keyword_position{background-image: url(../webimages/keyword_position.svg);}
+.icon_sty .keywords_density{background-image: url(../webimages/keywords_density.svg);}
+.icon_sty .keywords_suggestions{background-image: url(../webimages/keywords_suggestions.svg);}
+.icon_sty .keyword_research{background-image: url(../webimages/keyword_research.svg);}
+.icon_sty .keyword_competition{background-image: url(../webimages/keyword_competition.svg);}
+.icon_sty .related_keyword{background-image: url(../webimages/related_keyword.svg);}
+.icon_sty .long_tail{background-image: url(../webimages/long_tail.svg);}
+.icon_sty .rich_domains{background-image: url(../webimages/rich_domains.svg);}
+.icon_sty .seo_keyword{background-image: url(../webimages/seo_keyword.svg);}
+.icon_sty .keyword_analyzer{background-image: url(../webimages/keyword_analyzer.svg);}
+.icon_sty .keyword_overview{background-image: url(../webimages/keyword_overview.svg);}
+.icon_sty .keyword_difficulty{background-image: url(../webimages/keyword_difficulty.svg);}
+.icon_sty .paid_keyword{background-image: url(../webimages/paid_keyword.svg);}
+.icon_sty .backlink_checker{background-image: url(../webimages/backlink_checker.svg);}
+.icon_sty .backlink_maker{background-image: url(../webimages/backlink_maker.svg);}
+.icon_sty .website_link_count{background-image: url(../webimages/website_link_count.svg);}
+.icon_sty .website_broken_link{background-image: url(../webimages/website_broken_link.svg);}
+.icon_sty .link_price{background-image: url(../webimages/link_price.svg);}
+.icon_sty .reciprocal{background-image: url(../webimages/reciprocal.svg);}
+.icon_sty .website_link_analyzer{background-image: url(../webimages/website_link_analyzer.svg);}
+.icon_sty .broken_backlink{background-image: url(../webimages/broken_backlink.svg);}
+.icon_sty .valuable_backlink{background-image: url(../webimages/valuable_backlink.svg);}
+.icon_sty .backlinks_competitors{background-image: url(../webimages/backlinks_competitors.svg);}
+.icon_sty .anchor_text{background-image: url(../webimages/anchor_text.svg);}
+.icon_sty .seo_score{background-image: url(../webimages/seo_score.svg);}
+.icon_sty .pagerank{background-image: url(../webimages/pagerank.svg);}
+.icon_sty .online_ping{background-image: url(../webimages/online_ping.svg);}
+.icon_sty .page_speed{background-image: url(../webimages/page_speed.svg);}
+.icon_sty .page_size{background-image: url(../webimages/page_size.svg);}
+.icon_sty .page_snooper{background-image: url(../webimages/page_snooper.svg);}
+.icon_sty .hit_coounter{background-image: url(../webimages/hit_coounter.svg);}
+.icon_sty .xml_sitemap{background-image: url(../webimages/xml_sitemap.svg);}
+.icon_sty .url_rewriting{background-image: url(../webimages/url_rewriting.svg);}
+.icon_sty .screen_resolution{background-image: url(../webimages/screen_resolution.svg);}
+.icon_sty .url_encoder{background-image: url(../webimages/url_encoder.svg);}
+.icon_sty .adsense_calculator{background-image: url(../webimages/adsence_calculator.svg);}
+.icon_sty .graph_checker{background-image: url(../webimages/graph_checker.svg);}
+.icon_sty .graph_generator{background-image: url(../webimages/graph_generator.svg);}
+.icon_sty .qr_code{background-image: url(../webimages/qr_code.svg);}
+.icon_sty .htaccess_redirect{background-image: url(../webimages/htaccess_redirect.svg);}
+.icon_sty .get_http{background-image: url(../webimages/get_http.svg);}
+.icon_sty .twitter_card{background-image: url(../webimages/twitter_card.svg);}
+.icon_sty .internet_speed{background-image: url(../webimages/internet_speed.svg);}
+.icon_sty .wordpress_theme{background-image: url(../webimages/wordpress_theme.svg);}
+.icon_sty .instant_search{background-image: url(../webimages/instant_search.svg);}
+.icon_sty .virus_scan{background-image: url(../webimages/virus_scan.svg);}
+.icon_sty .screenshot_generator{background-image: url(../webimages/screenshot_generator.svg);}
+.icon_sty .secure_email{background-image: url(../webimages/secure_email.svg);}
+.icon_sty .mobile_friendly{background-image: url(../webimages/mobile_friendly.svg);}
+.icon_sty .video_downloader{background-image: url(../webimages/video_downloader.svg);}
+.icon_sty .facebook_downloader{background-image: url(../webimages/facebook_downloader.svg);}
+.icon_sty .soundcloud{background-image: url(../webimages/soundcloud.svg);}
+.icon_sty .vimeo_downloader{background-image: url(../webimages/vimeo_downloader.svg);}
+.icon_sty .instagaram_downloader{background-image: url(../webimages/instagram_downloader.svg);}
+.icon_sty .minify_css{background-image: url(../webimages/minify_css.svg);}
+.icon_sty .minify_html{background-image: url(../webimages/minify_html.svg);}
+.icon_sty .minify_js{background-image: url(../webimages/minify_js.svg);}
+.icon_sty .robots_txt{background-image: url(../webimages/robots_txt.svg);}
+.icon_sty .url_shortener{background-image: url(../webimages/url_shortener.svg);}
+.icon_sty .domain_overview{background-image: url(../webimages/domain_overview.svg);}
+.icon_sty .url_opener{background-image: url(../webimages/url_opener.svg);}
+.icon_sty .link_tracker{background-image: url(../webimages/link_tracker.svg);}
+.icon_sty .reverse_ip{background-image: url(../webimages/reverse_ip.svg);}
+.icon_sty .server_status{background-image: url(../webimages/server_status.svg);}
+.icon_sty .class_ip{background-image: url(../webimages/class_ip.svg);}
+.icon_sty .code_text{background-image: url(../webimages/code_text.svg);}
+.icon_sty .alexa_comparison{background-image: url(../webimages/alexa_comparison.svg);}
+.icon_sty .page_comparison{background-image: url(../webimages/page_comparison.svg);}
+.icon_sty .spider_simulator{background-image: url(../webimages/spider_simulator.svg);}
+.icon_sty .comparison_search{background-image: url(../webimages/comparison_search.svg);}
+.icon_sty .google_cache{background-image: url(../webimages/google_cache.svg);}
+.icon_sty .whois_lookup{background-image: url(../webimages/whois_lookup.svg);}
+.icon_sty .mozrank_checker{background-image: url(../webimages/mozrank_checker.svg);}
+.icon_sty .page_authority{background-image: url(../webimages/page_authority.svg);}
+.icon_sty .google_index{background-image: url(../webimages/google_index.svg);}
+.icon_sty .alexa_checker{background-image: url(../webimages/alexa_checker.svg);}
+.icon_sty .redirect_checker{background-image: url(../webimages/redirect_checker.svg);}
+.icon_sty .similar_site{background-image: url(../webimages/similar_site.svg);}
+.icon_sty .cloaking_checker{background-image: url(../webimages/cloaking_checker.svg);}
+.icon_sty .google_malware{background-image: url(../webimages/google_malware.svg);}
+.icon_sty .find_facebook{background-image: url(../webimages/find_facebook.svg);}
+.icon_sty .check_gzip{background-image: url(../webimages/check_gzip.svg);}
+.icon_sty .ssl_checker{background-image: url(../webimages/ssl_checker.svg);}
+.icon_sty .pokemon_go{background-image: url(../webimages/pokemon_go.svg);}
+.icon_sty .find_blog{background-image: url(../webimages/find_blog.svg);}
+.icon_sty .geo_ip{background-image: url(../webimages/geo_ip.svg);}
+.icon_sty .apps_rank{background-image: url(../webimages/apps_rank.svg);}
+.icon_sty .my_browser{background-image: url(../webimages/my_browser.svg);}
+.icon_sty .social_status{background-image: url(../webimages/social_status.svg);}
+.icon_sty .my_ip{background-image: url(../webimages/my_ip.svg);}
+.icon_sty .ip_location{background-image: url(../webimages/ip_location.svg);}
+.icon_sty .proxy_list{background-image: url(../webimages/proxy_list.svg);}
+.icon_sty .domain_age{background-image: url(../webimages/domain_age.svg);}
+.icon_sty .domain_authority{background-image: url(../webimages/domain_authority.svg);}
+.icon_sty .domain_lookup{background-image: url(../webimages/domain_lookup.svg);}
+.icon_sty .domain_hosting{background-image: url(../webimages/domain_hosting.svg);}
+.icon_sty .find_dns{background-image: url(../webimages/find_dns.svg);}
+.icon_sty .domain_name{background-image: url(../webimages/domain_name.svg);}
+.icon_sty .domain_ip{background-image: url(../webimages/domain_ip.svg);}
+.icon_sty .check_blacklist{background-image: url(../webimages/check_blacklist.svg);}
+.icon_sty .expired_domain{background-image: url(../webimages/expired_domain.svg);}
+.icon_sty .bulk_domain{background-image: url(../webimages/bulk_domain.svg);}
+.icon_sty .index_pages{background-image: url(../webimages/index_pages.svg);}
+.icon_sty .meta_analyzer{background-image: url(../webimages/meta_analyzer.svg);}
+.icon_sty .meta_generator{background-image: url(../webimages/meta_generator.svg);}
+.icon_sty .password_encryption{background-image: url(../webimages/password_encryption.svg);}
+.icon_sty .password_strength{background-image: url(../webimages/password_strength.svg);}
+.icon_sty .password_generator{background-image: url(../webimages/password_generator.svg);}
+.icon_sty .merge_pdf{background-image: url(../webimages/merge_pdf.svg);}
+.icon_sty .rotate_pdf{background-image: url(../webimages/rotate_pdf.svg);}
+.icon_sty .unlock_pdf{background-image: url(../webimages/unlock_pdf.svg);}
+.icon_sty .lock_pdf{background-image: url(../webimages/lock_pdf.svg);}
+.icon_sty .watermark{background-image: url(../webimages/watermark.svg);}
+.icon_sty .pdf_word{background-image: url(../webimages/pdf_word.svg);}
+.icon_sty .word_pdf{background-image: url(../webimages/word_pdf.svg);}
+.icon_sty .pdf_jpg{background-image: url(../webimages/pdf_jpg.svg);}
+.icon_sty .jpg_pdf{background-image: url(../webimages/jpg_pdf.svg);}
+.icon_sty .powerpoint_pdf{background-image: url(../webimages/powerpoint_pdf.svg);}
+.icon_sty .compress_pdf{background-image: url(../webimages/compress_pdf.svg);}
+.icon_sty .excel_pdf{background-image: url(../webimages/excel_pdf.svg);}
+.icon_sty .split_pdf{background-image: url(../webimages/split_pdf.svg);}
+.icon_sty .json_viewer{background-image: url(../webimages/json_viewer.svg);}
+.icon_sty .json_formatter{background-image: url(../webimages/json_formatter.svg);}
+.icon_sty .json_validator{background-image: url(../webimages/json_validator.svg);}
+.icon_sty .json_editor{background-image: url(../webimages/json_editor.svg);}
+.icon_sty .json_xml{background-image: url(../webimages/json_xml.svg);}
+.icon_sty .json_beautifier{background-image: url(../webimages/json_beautifier.svg);}
+.icon_sty .unit_converter{background-image: url(../webimages/unit_converter.svg);}
+.icon_sty .time_converter{background-image: url(../webimages/time_converter.svg);}
+.icon_sty .power_converter{background-image: url(../webimages/power_converter.svg);}
+.icon_sty .speed_converter{background-image: url(../webimages/speed_converter.svg);}
+.icon_sty .volume_conversion{background-image: url(../webimages/volume_conversion.svg);}
+.icon_sty .length_converter{background-image: url(../webimages/length_converter.svg);}
+.icon_sty .voltage_converter{background-image: url(../webimages/voltage_converter.svg);}
+.icon_sty .area_converter{background-image: url(../webimages/area_converter.svg);}
+.icon_sty .weight_converter{background-image: url(../webimages/weight_converter.svg);}
+.icon_sty .byte_converter{background-image: url(../webimages/byte_converter.svg);}
+.icon_sty .temperature_conversion{background-image: url(../webimages/temperature_conversion.svg);}
+.icon_sty .torque_converter{background-image: url(../webimages/torque_converter.svg);}
+.icon_sty .pressure_conversion{background-image: url(../webimages/pressure_conversion.svg);}
+.icon_sty .text_binary{background-image: url(../webimages/text_binary.svg);}
+.icon_sty .binary_text{background-image: url(../webimages/binary_text.svg);}
+.icon_sty .binary_hex{background-image: url(../webimages/binary_hex.svg);}
+.icon_sty .hex_binary{background-image: url(../webimages/hex_binary.svg);}
+.icon_sty .binary_ascii{background-image: url(../webimages/binary_ascii.svg);}
+.icon_sty .ascii_binary{background-image: url(../webimages/ascii_binary.svg);}
+.icon_sty .binary_decimal{background-image: url(../webimages/binary_decimal.svg);}
+.icon_sty .decimal_binary{background-image: url(../webimages/decimal_binary.svg);}
+.icon_sty .text_ascii{background-image: url(../webimages/text_ascii.svg);}
+.icon_sty .decimal_hex{background-image: url(../webimages/decimal_hex.svg);}
+.icon_sty .age_calculator{background-image: url(../webimages/age_calculator.svg);}
+.icon_sty .percentage_calculator{background-image: url(../webimages/percentage_calculator.svg);}
+.icon_sty .average_calculator{background-image: url(../webimages/average_calculator.svg);}
+.icon_sty .confidence_interval_calculator{background-image: url(../webimages/confidence_interval_calculator.svg);}
+.icon_sty .sales_tax_calculator{background-image: url(../webimages/sales_tax_calculator.svg);}
+.icon_sty .margin_calculator{background-image: url(../webimages/margin_calculator.svg);}
+.icon_sty .probability_calculator{background-image: url(../webimages/probability_calculator.svg);}
+.icon_sty .paypal_fee_calculator{background-image: url(../webimages/paypal_fee_calculator.svg);}
+.icon_sty .discount_calculator{background-image: url(../webimages/discount_calculator.svg);}
+.icon_sty .earnings_per_share_calculator{background-image: url(../webimages/earnings_per_share_calculator.svg);}
+.icon_sty .cpm_calculator{background-image: url(../webimages/cpm_calculator.svg);}
+.icon_sty .loan_to_value_calculator{background-image: url(../webimages/loan_to_value_calculator.svg);}
+.icon_sty .gst_calculator{background-image: url(../webimages/gst_calculator.svg);}
+.icon_sty .roman_numerals_date_converter{background-image: url(../webimages/roman_numerals_date_converter.svg);}
+.icon_sty .credit_card_validator{background-image: url(../webimages/credit_card_validator.svg);}
+.icon_sty .text_to_speech{background-image: url(../webimages/text_to_speech.svg);}
+.icon_sty .jpg_to_word{background-image: url(../webimages/jpg_to_word.svg);}
+.icon_sty .small_text_generator{background-image: url(../webimages/small_text_generator.svg);}
+.icon_sty .online_text_editor{background-image: url(../webimages/online_text_editor.svg);}
+.icon_sty .reverse_text_generator{background-image: url(../webimages/reverse_text_generator.svg);}
+.icon_sty .online_php_formatter{background-image: url(../webimages/online_php_formatter.svg);}
+.icon_sty .html_formatter{background-image: url(../webimages/html_formatter.svg);}
+.icon_sty .online_html_editor{background-image: url(../webimages/online_html_editor.svg);}
+.icon_sty .html_viewer{background-image: url(../webimages/html_viewer.svg);}
+.icon_sty .xml_formatter{background-image: url(../webimages/xml_formatter.svg);}
+.icon_sty .xml_beautifier{background-image: url(../webimages/xml_beautifier.svg);}
+.icon_sty .resume_builder{background-image: url(../webimages/resume_builder.svg);}
+.icon_sty .flyer_maker{background-image: url(../webimages/flyer_maker.svg);}
+.icon_sty .poster_maker{background-image: url(../webimages/poster_maker.svg);}
+.icon_sty .invitation_maker{background-image: url(../webimages/invitation_maker.svg);}
+.icon_sty .business_card_maker{background-image: url(../webimages/business_card_maker.svg);}
+.icon_sty .meme_generator{background-image: url(../webimages/meme_generator.svg);}
+.icon_sty .emoji{background-image: url(../webimages/emoji.svg);}
+.icon_sty .dailymotion_video_downloader{background-image: url(../webimages/dailymotion.svg);}
+.icon_sty .bmi_calculator{background-image: url(../webimages/bmi_calculator.svg);}
+.icon_sty .speech_to_text{background-image: url(../webimages/speech_to_text.svg);}
+.icon_sty .fake_name_generator{background-image: url(../webimages/fake_name_generator.svg);}
+.icon_sty .fake_address_generator{background-image: url(../webimages/fake_address_generator.svg);}
+.icon_sty .credit_card_generator{background-image: url(../webimages/credit_card_generator.svg);}
+.icon_sty .compress_jpeg_to_50kb{background-image: url(../webimages/compress_jpeg_to_50kb.svg);}
+.icon_sty .compress_image_to_20kb{background-image: url(../webimages/compress_image_to_20kb.svg);}
+.icon_sty .compress_jpeg_to_100kb{background-image: url(../webimages/compress_jpeg_to_100kb.svg);}
+.icon_sty .compress_jpeg_to_200kb{background-image: url(../webimages/compress_jpeg_to_200kb.svg);}
+.icon_sty .compress_jpg{background-image: url(../webimages/compress_jpg.svg);}
+.icon_sty .compress_pdf_to_100kb{background-image: url(../webimages/compress_pdf_to_100kb.svg);}
+.icon_sty .compress_pdf_to_200kb{background-image: url(../webimages/compress_pdf_to_200kb.svg);}
+.icon_sty .compress_pdf_to_300kb{background-image: url(../webimages/compress_pdf_to_300kb.svg);}
+.icon_sty .compress_pdf_to_500kb{background-image: url(../webimages/compress_pdf_to_500kb.svg);}
+.icon_sty .pdf_to_zip{background-image: url(../webimages/pdf_to_zip.svg);}
+.icon_sty .delete_pages_from_pdf{background-image: url(../webimages/delete_pages_from_pdf.svg);}
+.icon_sty .pdf_to_bmp{background-image: url(../webimages/pdf_to_bmp.svg);}
+.icon_sty .gif_to_pdf{background-image: url(../webimages/gif_to_pdf.svg);}
+.icon_sty .pdf_to_tiff{background-image: url(../webimages/pdf_to_tiff.svg);}
+.icon_sty .tiff_to_pdf{background-image: url(../webimages/tiff_to_pdf.svg);}
+.icon_sty .png_to_pdf{background-image: url(../webimages/png_to_pdf.svg);}
+.icon_sty .binary_translator{background-image: url(../webimages/binary_translator.svg);}
+.icon_sty .resize_image_to_50kb{background-image: url(../webimages/resize_image_to_50kb.svg);}
+.icon_sty .resize_image_to_100kb{background-image: url(../webimages/resize_image_to_100kb.svg);}
+.icon_sty .reduce_image_size_in_kb{background-image: url(../webimages/reduce_image_size_in_kb.svg);}
+.icon_sty .twitter_video_downloader{background-image: url(../webimages/twitter_video_downloader.svg);}
+.icon_sty .tiktok_video_downloader{background-image: url(../webimages/tiktok_video_downloader.svg);}
+.icon_sty .twitter_gif_downloader{background-image: url(../webimages/twitter_gif_downloader.svg);}
+.icon_sty .instagaram_reels_download{background-image: url(../webimages/instagram_reels_download.svg);}
+.icon_sty .chronological_age_calculator{background-image: url(../webimages/chronological_age_calculator.svg);}
+.icon_sty .pdf_to_png{background-image: url(../webimages/pdf_to_png.svg);}
+.icon_sty .bmp_to_pdf{background-image: url(../webimages/bmp_to_pdf.svg);}
+.icon_sty .svg_to_pdf{background-image: url(../webimages/svg_to_pdf.svg);}
+.icon_sty .pdf_to_svg{background-image: url(../webimages/pdf_to_svg.svg);}
+.icon_sty .add_link_to_pdf{background-image: url(../webimages/add_link_to_pdf.svg);}
+.icon_sty .pdf_to_gif{background-image: url(../webimages/pdf_to_gif.svg);}
+.icon_sty .pdf_to_emf{background-image: url(../webimages/pdf_to_emf.svg);}
+.icon_sty .emf_to_pdf{background-image: url(../webimages/emf_to_pdf.svg);}
+.icon_sty .add_table_of_contents_to_pdf{background-image: url(../webimages/add_table_of_contents_to_pdf.svg);}
+.icon_sty .pdf_to_wmf{background-image: url(../webimages/pdf_to_wmf.svg);}
+.icon_sty .pdf_to_ico{background-image: url(../webimages/pdf_to_ico.svg);}
+.icon_sty .add_header_footer_pdf{background-image: url(../webimages/add_header_footer_pdf.svg);}
+.icon_sty .wmf_to_pdf{background-image: url(../webimages/wmf_to_pdf.svg);}
+.icon_sty .add_page_numbers_to_pdf{background-image: url(../webimages/add_page_numbers_to_pdf.svg);}
+.icon_sty .exif_to_pdf{background-image: url(../webimages/exif_to_pdf.svg);}
+.icon_sty .ico_to_pdf{background-image: url(../webimages/ico_to_pdf.svg);}
+.icon_sty .pdf_to_exif{background-image: url(../webimages/pdf_to_exif.svg);}
+.icon_sty .tiktok_to_mp4{background-image: url(../webimages/tiktok_to_mp4.svg);}
+.icon_sty .instagram_to_mp4{background-image: url(../webimages/instagram_to_mp4.svg);}
+.icon_sty .loan_calculator{background-image: url(../webimages/loan_calculator.svg);}
+.icon_sty .calorie_calculator{background-image: url(../webimages/calorie_calculator.svg);}
+.icon_sty .time_calculator{background-image: url(../webimages/time_calculator.svg);}
+.icon_sty .hours_calculator{background-image: url(../webimages/hours_calculator.svg);}
+.icon_sty .grade_calculator{background-image: url(../webimages/grade_calculator.svg);}
+.icon_sty .gpa_calculator{background-image: url(../webimages/gpa_calculator.svg);}
+.icon_sty .tdee_calculator{background-image: url(../webimages/tdee_calculator.svg);}
+.icon_sty .salary_calculator{background-image: url(../webimages/salary_calculator.svg);}
+.icon_sty .investment_calculator{background-image: url(../webimages/investment_calculator.svg);}
+.icon_sty .percentage_increase_calculator{background-image: url(../webimages/percentage_increase_calculator.svg);}
+.icon_sty .percentage_decrease_calculator{background-image: url(../webimages/percentage_decrease_calculator.svg);}
+.icon_sty .percentage_change_calculator{background-image: url(../webimages/percentage_change_calculator.svg);}
+.icon_sty .percentage_difference_calculator{background-image: url(../webimages/percentage_difference_calculator.svg);}
+.icon_sty .ai_content_detector{background-image: url(../webimages/ai_content_detector.svg);}
+.icon_sty .hex_text{background-image: url(../webimages/hex_text.svg);}
+.icon_sty .ascii_text{background-image: url(../webimages/ascii_text.svg);}
+.icon_sty .heic_png{background-image: url(../webimages/heic_png.svg);}
+.icon_sty .convert_svg{background-image: url(../webimages/convert_svg.svg);}
+.icon_sty .png_svg{background-image: url(../webimages/png_svg.svg);}
+.icon_sty .jpg_svg{background-image: url(../webimages/jpg_svg.svg);}
+.icon_sty .jpeg_svg{background-image: url(../webimages/jpeg_svg.svg);}
+.icon_sty .webp_png{background-image: url(../webimages/webp_png.svg);}
+.icon_sty .svg_png{background-image: url(../webimages/svg_png.svg);}
+.icon_sty .png_ico{background-image: url(../webimages/png_ico.svg);}
+.icon_sty .avif_jpg{background-image: url(../webimages/avif_jpg.svg);}
+.icon_sty .essay_writer{background-image: url(../webimages/essay_writer.svg);}
+.icon_sty .ai_writer{background-image: url(../webimages/ai_writer.svg);}
+.icon_sty .ai_text_generator{background-image: url(../webimages/ai_writer.svg);}
+.icon_sty .title_generator{background-image: url(../webimages/title_generator.svg);}
+.icon_sty .essay_title_generator{background-image: url(../webimages/essay_title_generator.svg);}
+.icon_sty .thesis_statement_generator{background-image: url(../webimages/thesis_statement_generator.svg);}
+.icon_sty .ai_story_generator{background-image: url(../webimages/ai_story_generator.svg);}
+.icon_sty .conclusion_generator{background-image: url(../webimages/conclusion_generator.svg);}
+.icon_sty .chatgpt_detector{background-image: url(../webimages/chatgpt_detector.svg);}
+.icon_sty .citation_generator{background-image: url(../webimages/citation_generator.svg);}
+.icon_sty .ai_humanizer{background-image: url(../webimages/ai_humanizer.svg);}
+.icon_sty .pinterest_video_downloader{background-image: url(../webimages/pinterest_video_downloader.svg);}
+.icon_sty .reddit_video_downloader{background-image: url(../webimages/reddit_video_downloader.svg);}
+@media only screen and (max-width: 767px) {
+    .main_area .icon_sty{
+        margin: 4px;
+        width: 132px;
+        display: inline-flex;
+    }
+    .main_area .icon_sty div{display:none;}
+    .main_area .icon_sty span{
+        min-height: 40px;
+        background-color: #EFF2F5;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .mhs_sty{justify-content: center;}
+    #design_studio_box .icon_sty {width: 126px;}
+    body #design_studio_box{padding: 30px 5px;}
+    #design_studio_box a span {background: #fff;}
+}
+.icon_animation {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.icon_animation samp {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    background: #EEF1F5;
+    animation: icon_animation 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    height:8px;
+}
+.main_area .icon_sty:hover .icon_animation samp {background:#fff}
+.icon_animation samp:nth-child(1) {
+    top: 10px;
+    animation-delay: -0.24s;
+}
+.icon_animation samp:nth-child(2) {
+    top: 28px;
+    left: 30px;
+    animation-delay: -0.12s;
+}
+.icon_animation samp:nth-child(3) {
+    top: 47px;
+    animation-delay: 0s;
+}
+@keyframes icon_animation {
+    0% {
+        left: 0px;
+        width: 0px;
+    }
+    50%, 100% {
+        left: 8px;
+        width: 48px;
+    }
+}
+#design_studio_box{
+    background-image: url(../webimages/design-studio-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 100px;
+}
+#design_studio_box h2{text-transform: uppercase}
+#design_studio_box h2 span{font-weight: 100}
+#design_studio_box .icon_sty{font-weight: 100}
+#design_studio_box .icon_sty div{background-color:#fff;width:90px;height:90px;background-size: auto 50px;}
+.ds1 {border-bottom: 5px solid #60AFF8;}
+.ds2 {border-bottom: 5px solid #5FD7E5;}
+.ds3 {border-bottom: 5px solid #96A0F5;}
+.ds4 {border-bottom: 5px solid #EBD091;}
+.ds5 {border-bottom: 5px solid #FFBBBB;}
+.ds6 {border-bottom: 5px solid #B3F1C3;}
+.ds7 {border-bottom: 5px solid #D5B9F9;}
+#design_studio_box h2 a {color: #222;}
+#design_studio_box h2 a:hover{text-decoration: none;}
+#design_studio_box .icon_sty div:hover {
+    background-color: #EEF1F5;
+    border-color: #000 !important;
+    transition: .5s;
+}
+h2.sub_headings.mt25 {margin-top: 25px !important;}
+/*#design_studio_box .icon_sty div*/
+#design_studio_box .icon_sty div::after,#design_studio_box .icon_sty div::before{
+    display: none;
+}
