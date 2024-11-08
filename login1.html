@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Links======================================= -->
+     <!-- Fonts  -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="./css.css">
+
+    <!-- Style CSS Essential  -->
+    <!-- <link href="https://smallseotools.com/css/app.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./app.css">
+	
+    <!-- Template CSS -->
+    <!-- <link href="https://smallseotools.com/css/templates.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./templates.css">
+
+    <!-- Feedback form Css  -->
+	<!-- <link href="https://smallseotools.com/css/feedback-form.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="./feedback-form.css">
+	
+
+</head>
+<body>
+    
+    
+<!-- NavBar Home Page Starts =========================================================================== -->
+<div class="bg-white row mx-0 border1 border-left-0 border-right-0 border-top-0" id="fixed_top">
+    <nav class="navbar navbar-expand-lg navbar-dark cus_nav mx-auto">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="./Assets/icons/home-icon.png" alt="Image of website logo" class="img-fluid logo_img" width="200" height="31">
+        </a>
+        
+                <div class="navbar-collapse collapse" id="navb">
+                
+                <!-- Login page Link href="https://smallseotools.com/login/"  ---------------------- -->
+                <div class="log_register mt-3 text-center d-none roe mx-0 align-items-center justify-content-center">
+                    <a href="./login1.html" class="rounded text-white d-inline-flex align-items-center justify-content-center mr-2">Login</a>
+                </div>
+
+                <ul class="navbar-nav ml-auto">
+            <!-- https://pro.smallseotools.com/pricing  and   -->
+                <li class="nav-item mdn pro_pricing">
+                    <a class="nav-link fw_600 cp pro_pricing_bg d-flex align-items-center justify-content-center" href="#" onclick="tool_trigger('navbar price')">
+                        <img src="./Assets/icons/pricing_icon.svg" alt="PRO Pricing" class="img-fluid mr-2" width="25" height="25">Pricing</a>
+                </li>
+                   
+                <!-- https://smallseotools.com/plagiarism-checker/   -->
+                <li class="nav-item mob_links_bb br_hover  mt-md-0 mt-3">
+                    <a class="nav-link fw_400 d-flex" href="#">
+                        <span class="mob_plag mob_icons"></span>Plagiarism Checker</a>
+                </li>
+                
+                <!-- https://smallseotools.com/grammar-checker/--------------- -->
+                <li class="nav-item mob_links_bb br_hover ">
+                    <a class="nav-link fw_400 d-flex" href="#">
+                        <span class="mob_grammar mob_icons"></span>Free Grammar Checker</a>
+                </li>
+
+                <!-- https://smallseotools.com/reverse-image-search/-------------- -->
+                    <li class="nav-item mob_links_bb br_hover ">
+                        <a class="nav-link fw_400 d-flex" href="#">
+                            <span class="mob_reverse mob_icons"></span>Reverse Image Search</a>
+                    </li>
+                    
+                    <!-- https://smallseotools.com/paraphrasing-tool/--------------------------- -->
+                    <li class="nav-item mob_links_bb br_hover ">
+                        <a class="nav-link fw_400 d-flex justify-content-center" href="#">Paraphrasing Tool                        </a>
+                    </li>
+                    
+                    <!-- https://smallseotools.com/login/------------------------------- -->
+                    <li class="nav-item mdn mob_links_bb br_hover ">
+                        <a class="nav-link fw_400" href="./login1.html">Login</a>
+                    </li>
+                
+                </ul>
+            
+            
+                        
+                        
+        </div>
+    </nav>
+    </div>
+
+<!-- NavBar Home Page Ends  =========================================================================== -->
+
+
+<!-- Login Start =============================================================================================== -->
+
+<div id="app" class="d-flex px-3">
+    <main class="main_area mx-auto my-4 text-center">
+            <div class="col bg-white p-0 border1 static-pages auth_page clr_fff">
+    
+    <h1 class="col-12 sub_headings heading_border p-3 m-0">Log in</h1>
+
+    <div class="col px-5 pb-4 mps">
+        
+        <p class="sub_text mx-auto my-4 px-4">Enter your login details to access the dashboard</p>
+        
+        <div class="row m-0 social_login fw_700 justify-content-center"  >
+    
+            <!-- https://smallseotools.com/login/facebook ?-- -->
+            <a href="https://www.facebook.com/login.php/" class="rounded d-inline-flex align-items-center justify-content-center fb_bg text-decoration-none m-1" style=" background: transparent; border: 1px solid #035CFE; color: #000; width: 260px; height: 60px; font-size: 16px;">                
+                <img src="./Assets/icons/log-fb-dflt.svg" class="mr-2 sm_dflt" alt="fb image">Connect with Facebook</a>
+                
+
+
+                
+                <!-- https://smallseotools.com/login/google -->
+                <a href="https://accounts.google.com/" class="d-inline-flex align-items-center justify-content-center text-decoration-none m-1"  style=" background: transparent; color: #000; width: 260px; height: 60px; font-size: 16px;">
+                <img src="./Assets/icons/signin-google.png" class="img-fluid" alt="login with google">
+            </a>
+
+        </div>
+        
+        
+        <form method="POST" action="./login1.html" accept-charset="UTF-8" id="login-form">
+            <input name="_token" type="hidden" value="Q7NL0RmFGQsezYVMzzNDKX5of0q4K4zsNB7xWM2Y">
+            <div class="mt-4 px-5 mps">
+                <div class="border-top w-100">
+                    <div class="w530 mx-auto">
+                        <div class="tool_heading my-1 mt-4 text-left">Email</div>
+                        <label for="" class="border1 py-2 bg_f6f8fa bg_383b3d w-100">
+                            <div class="input-group">
+                                <div class="input-group-prepend border-right mr-0">
+                                    <span class="input-group-text fw_700 py-0 border-0 bg_f6f8fa bg_383b3d px-4 mps">
+                                        <img src="./Assets/icons/reg-email.svg" alt="email image">
+                                    </span>
+                                </div>
+                                <input class="form-control fw_600 border-0 bg_f6f8fa bg_383b3d" id="email" placeholder="Enter Email Address" required="required" autocomplete="email" autofocus="autofocus" name="email" type="email" value="">
+                            </div>
+                        </label>
+                        <div class="tool_heading my-1 text-left">Password</div>
+                        <label for="" class="border1 py-1 bg_f6f8fa bg_383b3d w-100">
+                            <div class="input-group">
+                                <div class="input-group-prepend border-right mr-0 min_w75">
+                                    <span class="input-group-text fw_700 py-0 border-0 bg_f6f8fa bg_383b3d px-4 mps">
+                                        <img src="./Assets/icons/reg-lock.svg" alt="password image">
+                                    </span>
+                                </div>
+                                <input class="form-control fw_600 border-0 bg_f6f8fa bg_383b3d password" id="password" placeholder="Enter Password" required="required" autocomplete="current-password" name="password" type="password" value="">
+                                <img src="./Assets/icons/eye-off.svg" alt="repass image" class="mx-3 cp passImg" onclick="showPass(this)">
+                            </div>
+                        </label>
+
+                        <!-- https://smallseotools.com/password-reset/ -->
+                        <a href="https://smallseotools.com/password-reset/" class="enf_sty fw_600 float-right">Forgot Password?</a>
+                        <label for="remember" class="check_area pl-4 my-2 w-100 text-left">Keep me logged in                                
+                            <input id="remember" name="remember" type="checkbox" value="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="w530 mx-auto my-1">
+                    <div class="g-recaptcha d-inline-block float-left my-1" data-sitekey="6LfGQ-EZAAAAAN7nhtxwfS6NkPPFwxGdiBfmwzLf"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-glj5bzx56j1a" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfGQ-EZAAAAAN7nhtxwfS6NkPPFwxGdiBfmwzLf&amp;co=aHR0cHM6Ly9zbWFsbHNlb3Rvb2xzLmNvbTo0NDM.&amp;hl=en&amp;v=-ZG7BC9TxCVEbzIO2m429usb&amp;size=normal&amp;cb=m9au5fbbt2lc"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><br><br>
+                    <button class="tool_btn px-3 w-100 authBtn" name="login" captcha-load="Login" onclick="check_validation()" type="button" value="Login">Login</button>
+                    
+                    <div class="fw_700 mt-4 text-left">Don't have an Account? 
+                        <!-- https://smallseotools.com/register/ -->
+                        <a href="https://smallseotools.com/register/">Register</a></div>
+                </div>
+                
+            </div></form>
+        
+    </div>
+</div>
+    </main>
+</div>
+
+
+
+<!-- Login Ends ================================================================================================ -->
+
+
+
+<!-- Our Projects Starts =========================================================================================== -->
+
+<div class="sticky_stop"></div>
+
+<div class="as_seen bg-white row mx-0 justify-content-center py-4 px-2 border1 border-left-0 border-right-0">
+    <h3 class="fw_600 w-100 text-center mb-3 clr_fff">AS SEEN ON:</h3>
+    
+    <div id="demo" class="carousel slide in_as_seen px-5" data-ride="carousel">
+        <!-- The slideshow------------------------------------ -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row mx-0">
+                    
+                    
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1">
+                        <img src="./Assets/images/Ads/1-to-10/1.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+
+
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/2.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/3.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/4.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/5.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row mx-0">
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/6.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1">
+                        <img src="./Assets/images/Ads/1-to-10/7.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/8.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/9.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/10.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev rounded-circle" href="#demo" data-slide="prev" aria-label="data slide previous">
+            <span data-rklazy='{"fullpath":"https://smallseotools.com/webimages/chevron_left.svg","type":"img","alt":"image left","class":"img-fluid"}'></span>
+        </a>
+        <a class="carousel-control-next rounded-circle" href="#demo" data-slide="next" aria-label="data slide next">
+            <span data-rklazy='{"fullpath":"https://smallseotools.com/webimages/chevron_right.svg","type":"img","alt":"image right","class":"img-fluid"}'></span>
+        </a>
+    </div>
+</div>
+
+<!-- Our Projects Ends  =========================================================================================== -->
+
+
+
+
+<!-- Footer Starts ====================================================================================== -->
+
+<div class="main_fpt px-4 pt-4 pb-3 mps bg_f6f8fa row mx-0 justify-content-center">
+    <div class="sub_area">
+        <div class="col-12 px-0 py-3 row mx-0 text-center text-break clr_fff">
+            <div class="col-md-3">
+                <div class="d-inline-block text-left">
+                    <a href="#">
+                        <img src="./Assets/icons/home-icon.png" alt="Image of website logo" class="img-fluid logo_img" width="200" height="31">
+                    </a>
+                                        
+                    <div class="fw_700 fs22 mt-3">Contact Us</div>
+                    
+                    <div><a href="./cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="41323431312e333501322c202d2d32242e352e2e2d326f222e2c">[email&#160;protected]</a></div>
+                    <div class="fw_700 fs22 mt-3">Address</div>
+                    <div>438, Streatham High Road<br>London, UK.<br>SW16 3PX</div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="d-inline-block text-left">
+                    <a class="fw_700 fs22 mt-3 tool_heading"     href="#">AI Writing Generators</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Plagiarism Checker</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">AI Essay Writer</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">AI Writer</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">AI Text Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Title Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Paragraph Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Essay Title Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Plot Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Thesis Statement Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">AI Story Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Conclusion Generator</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-inline-block text-left">
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Terms of Services</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Testimonials</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Contact Us</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">About us</a>
+                    
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Privacy</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-inline-block text-left">
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Refund Policy</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Blog</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">FAQs</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Pricing</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Design Studio</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0">
+            <div class="col-md-6 p-2">
+                <div class="p-4 text-center row mx-0 align-content-center justify-content-center border1 bg-white mps bg_2f3133">
+                    <div class="sub_headings">You May Like Our Most Popular Tools & Apps</div>
+                    <div class="d-flex justify-content-center fpop_tools mt-3 mb-4">
+                        <a href="#" aria-label="plagiarism checker api" class="d-inline-flex align-items-center justify-content-center rounded-circle mx-1">
+                            <span class="d-block" data-rklazy='{"name":"f_api","type":"background"}'></span>
+                        </a>
+                        
+                        
+                        <a href="#" aria-label="wordpress plagiarism checker" class="d-inline-flex align-items-center justify-content-center rounded-circle mx-1">
+                            <span class="d-block" data-rklazy='{"name":"f_wordpress","type":"background"}'></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-2">
+                <div class="pt-4 pb-3 px-4 text-center border1 bg-white mps bg_2f3133">
+                    <div class="sub_headings">Subscribe to our Newsletter & Stay updated</div>
+                    <div class="input-group mb-3 subs_inp bg_f6f8fa p-1 bg_202223">
+                        <input type="email" name="email" placeholder="Enter your email address" class="form-control rounded-0 border-0 bg_f6f8fa bg_202223 h-100">
+                        <div class="input-group-append">
+                            <!-- <span class="input-group-text">@example.com</span> -->
+                            <button type="submit" class="btn subs_button text-white rounded-0"><span data-rklazy='{"fullpath":"https://smallseotools.com/webimages/subscribe_btn.svg","type":"img","alt":"image right","class":"img-fluid mr-1"}'></span>Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="social_box">
+                        <a href="#" aria-label="facebook" target="_blank" class="d-inline-block mx-1" data-rklazy='{"name":"sub_facebook","type":"background"}'></a>
+                        <a href="#" aria-label="twitter" target="_blank" class="d-inline-block mx-1" data-rklazy='{"name":"sub_twitter","type":"background"}'></a>
+                        
+                        <a href="#" aria-label="youtube" target="_blank" class="d-inline-block mx-1" data-rklazy='{"name":"sub_youtube","type":"background"}'></a>
+                        
+                        <a href="#" aria-label="pinterest" target="_blank" class="d-inline-block mx-1" data-rklazy='{"name":"sub_pinterest","type":"background"}'></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center footer_links clr_fff m-0 mt-2 w-100">Copyright © 2012-2024 by <a href="#" class="footer_links clr_fff">SmallTools.com</a> All Rights Reserved.</p>
+</div>
+
+
+<div class="for_footer_ad">
+</div>			
+
+<div class="new___s_ text_center d-block o-zergnet px303 b px304" data-after="ab_c"></div>
+		<span class="b post-zergnet-wrap" of-click="click"></span>
+		<span class="cold___sa_"></span>
+		
+	
+			<div class="scroll_top border1 bg-white rounded-circle bg_2f3133"></div>
+
+<!-- Footer Ends  ====================================================================================== -->
+
+	
+
+<!-- Script ==================================================== -->
+	<script data-cfasync="false" src="./cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+		var base_url='https://smallseotools.com/';
+		var Processing='Processing...';
+		var Uploading='Uploading...';
+		var Downloading='Downloading...';
+		var Detecting='Detecting...';
+		var Searching='Searching...';
+		var Converting='Converting...';
+		var Checking='Checking...';
+		var Finalizing='Finalizing...';
+	</script>
+	<script src="./app.js"></script>
+	<script src="./myscript.js"></script>
+
+	<script src="./feedback.js"></script>
+
+<!-- Script ====================== -->
+    
+</body>
+</html>
