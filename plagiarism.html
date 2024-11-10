@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Links======================================= -->
+     <!-- Fonts  -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="./css.css">
+
+    <!-- Style CSS Essential  -->
+    <!-- <link href="https://smallseotools.com/css/app.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./app.css">
+	
+    <!-- Template CSS -->
+    <!-- <link href="https://smallseotools.com/css/templates.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./templates.css">
+
+    <!-- Feedback form Css  -->
+	<!-- <link href="https://smallseotools.com/css/feedback-form.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="./feedback-form.css">
+	
+    <!-- Plagiarism-Checker CSS ==================================================  -->
+	<link rel="stylesheet" href="./Plagiarism-Checker.css">
+	
+
+</head>
+<body>
+    
+    
+<!-- NavBar Home Page Starts =========================================================================== -->
+<div class="bg-white row mx-0 border1 border-left-0 border-right-0 border-top-0" id="fixed_top">
+    <nav class="navbar navbar-expand-lg navbar-dark cus_nav mx-auto">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="./Assets/icons/home-icon.png" alt="Image of website logo" class="img-fluid logo_img" width="200" height="31">
+        </a>
+        
+                <div class="navbar-collapse collapse" id="navb">
+                
+                <!-- Login page Link href="https://smallseotools.com/login/"  ---------------------- -->
+                <div class="log_register mt-3 text-center d-none roe mx-0 align-items-center justify-content-center">
+                    <a href="./login1.html" class="rounded text-white d-inline-flex align-items-center justify-content-center mr-2">Login</a>
+                </div>
+
+                <ul class="navbar-nav ml-auto">
+            <!-- https://pro.smallseotools.com/pricing  and   -->
+                <li class="nav-item mdn pro_pricing">
+                    <a class="nav-link fw_600 cp pro_pricing_bg d-flex align-items-center justify-content-center" href="#" onclick="tool_trigger('navbar price')">
+                        <img src="./Assets/icons/pricing_icon.svg" alt="PRO Pricing" class="img-fluid mr-2" width="25" height="25">Pricing</a>
+                </li>
+                   
+                <!-- https://smallseotools.com/plagiarism-checker/   -->
+                <li class="nav-item mob_links_bb br_hover  mt-md-0 mt-3">
+                    <a class="nav-link fw_400 d-flex" href="./plagiarism.html">
+                        <span class="mob_plag mob_icons"></span>Plagiarism Checker</a>
+                </li>
+                
+                <!-- https://smallseotools.com/grammar-checker/--------------- -->
+                <li class="nav-item mob_links_bb br_hover ">
+                    <a class="nav-link fw_400 d-flex" href="#">
+                        <span class="mob_grammar mob_icons"></span>Free Grammar Checker</a>
+                </li>
+
+                <!-- https://smallseotools.com/reverse-image-search/-------------- -->
+                    <li class="nav-item mob_links_bb br_hover ">
+                        <a class="nav-link fw_400 d-flex" href="#">
+                            <span class="mob_reverse mob_icons"></span>Reverse Image Search</a>
+                    </li>
+                    
+                    <!-- https://smallseotools.com/paraphrasing-tool/--------------------------- -->
+                    <li class="nav-item mob_links_bb br_hover ">
+                        <a class="nav-link fw_400 d-flex justify-content-center" href="#">Paraphrasing Tool                        </a>
+                    </li>
+                    
+                    <!-- https://smallseotools.com/login/------------------------------- -->
+                    <li class="nav-item mdn mob_links_bb br_hover ">
+                        <a class="nav-link fw_400" href="./login1.html">Login</a>
+                    </li>
+                
+                </ul>
+            
+            
+                        
+                        
+        </div>
+    </nav>
+</div>
+
+<!-- NavBar Home Page Ends  =========================================================================== -->
+
+
+<!-- Plagiarism Checker  Start =============================================================================================== -->
+
+<div class="tool_area mx-auto">
+<div class="row mx-0 justify-content-md-between justify-content-center align-items-center">
+
+<h1 class="tool_heading fw_600 d-flex justify-content-center text-center">Plagiarism Checker</h1>
+
+</div>
+
+
+<form method="POST" action="#" accept-charset="UTF-8" id="plagiarism_checker_form"><input name="_token" type="hidden" value="M8EsxR26m10IPpS425F1QeLzQ9PG8xKve1RmWVvD">
+
+<div class="d-lg-flex align-items-center d-block">
+<div class="in_tool_area w-100">
+
+
+<div class="input_area border1">
+<div id="error_container"></div>
+<div class="input_area1 border1">
+<textarea id="textbox" class="pcn_txtarea w-100 cus_scrollbar border-0 d-flex mb-md-3 mb-2 bg_202223" onpaste="count()" onkeyup="count()" name="pc_text" cols="50" rows="10" placeholder="Copy and paste your text here to detect plagiarized content ..."></textarea>
+<input id="pc_text_language" name="pc_text_language" type="hidden" value="en">
+<div class="d-md-none d-flex align-items-center justify-content-between">
+                                        
+    <div class="d-flex">
+        <div class="d-inline-flex align-items-center p-0 pcn_lang border1 bg-white" data-log="new pc tool lang drop down">
+            <button type="button" class="btn p-0 border-0 px-2 text-md-left" data-toggle="modal" data-target="#myModal_m">
+                <img src="./Assets/icons/plager-1.png" alt="image of languages">
+            </button>
+            <div class="modal fade pr-0 lang_model" id="myModal_m">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header border-0 p-0">
+                            <button type="button" class="close ml-auto" data-dismiss="modal" style="margin-left: auto !important">×</button>
+                        </div>
+                      
+                        <div class="modal-body p-1" id="lang_drop_textarea" style="padding-top: 0px !important">
+                            <div class="row mx-0">
+                              <div class="col-md-4 col-6 p-0">
+                                <a href="./plagiarism.html" class="active_lang"> English - EN </a>
+                              </div>
+                              <div class="col-md-4 col-6 p-0">
+                                <a href="./plagiarism.html" class=""> русский - RU </a>
+                              </div>
+                              <div class="col-md-4 col-6 p-0">
+                                <a href="./plagiarism.html" class=""> 日本語 - JA </a>
+                              </div>
+                              <div class="col-md-4 col-6 p-0">
+                                <a href="./plagiarism.html" class=""> Italiano - IT </a>
+                              </div>
+                              <div class="col-md-4 col-6 p-0">
+                                <a href="./plagiarism.html" class=""> Français - FR </a>
+                              </div>
+                              <div class="col-md-4 col-6 p-0">
+                                <a href="https://smallseotools.com/ar/plagiarism-checker/" class=""> عربى - AR </a>
+                              </div>
+                              <div class="col-md-4 col-6 p-0">
+                                <a href="https://smallseotools.com/sv/plagiarism-checker/" class=""> Swedish - SV </a>
+                              </div>
+                              <div class="col-md-4 col-6 p-0">
+                                <a href="https://smallseotools.com/hi/plagiarism-checker/" class=""> Hindi - HI </a>
+                              </div>
+                            </div>
+                          </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div data-log="new pc clear" class="pcn_remove_txt cp border1 bg-white ml-2" onclick="clear_elements({'v':{'textbox':'','fileUpload':'','by_url':'','exclude_url':''},'t':{'count_':'0','file_upload_status':'Attach File'}},this,'Cleared!')" data-name="Clear?" data-toggle="tooltip" title="" data-original-title="Clear?"></div>
+    
+    </div>
+</div>                                
+
+<!-- The Modal -->
+<div class="modal fade" id="newPopupPlans">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content clr_fff bg_202223">
+            <div class="modal-header border-0 p-0">
+                <button type="button" class="close ml-auto clr_fff" data-dismiss="modal" style="margin-left: auto !important">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="fw_600 mb-1 pc_plans_heading">Plagiarism Checker Pro</div>
+                <p>Upgrade your plan to unlock advanced plagiarism detection and exclusive features.</p>
+                <div class="row mx-0 my-md-5 my-3 justify-content-center">
+                    <div class="pc_plans p-3 border1 m-2" data-target="https://pro.smallseotools.com/pricing?leadPkgId=44&amp;type=Monthly">
+                        <div class="clr_fff pc_plans_month">Monthly</div>
+                        <div class="clr_fff pc_plans_rate">$14.80 / <span>Monthly</span></div>
+                    </div>
+                    <div class="pc_plans p-3 border1 m-2 active" data-target="https://pro.smallseotools.com/pricing?leadPkgId=20&amp;type=Yearly">
+                        <div class="clr_fff pc_plans_month">Yearly</div>
+                        <div class="clr_fff pc_plans_rate">$9.80/Month, <span>Billed Yearly</span></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a style="text-decoration:none" class="d-inline-flex align-items-center justify-content-center pc_plans_premium border-0 text-white" href="https://pro.smallseotools.com/pricing?leadPkgId=20&amp;type=Yearly">Get Premium</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="db_positionr">
+    
+    <a data-toggle="modal" data-target="#newPopupPlans" data-log="new pc pricing banner 2" class="desktop_banner text-decoration-none d-md-flex d-none mx-0 align-items-center py-2 justify-content-between text-white fw_600 px-2 db_pr">
+        <img src="https://smallseotools.com/webimages/pc_of_img.png" alt="banner image" width="92" height="42" class="m-1 db_img">
+        <div class="db_imgs_sty row mx-0">
+            <div class="d-md-inline-flex align-items-center banner_opt"><img src="https://smallseotools.com/webimages/pc_word_limit.png" alt="words limits" width="26" height="26" class="mr-2">30k words limits</div>
+            <div class="d-md-inline-flex align-items-center banner_opt"><img src="https://smallseotools.com/webimages/pc_api.png" alt="Deep Search" width="22" height="26" class="mr-2">Deep Search</div> <br class="d-none">
+            <div class="d-md-inline-flex align-items-center banner_opt mrr-4"><img src="https://smallseotools.com/webimages/pc_word_account.png" alt="PDF Report" width="26px" height="26px" class="mr-2">PDF Report</div>
+            <div class="d-md-inline-flex align-items-center banner_opt"><img src="https://smallseotools.com/webimages/pc_no_ads.png" alt="No Ads" width="26px" height="26px" class="mr-2">No Ads</div>
+        </div>
+        <div class="d-md-inline-flex align-items-center mr-md-0 mr-2 pc_starting_from fw_600 bg-white text-body justify-content-center p-1">Get faster results in $9.80</div>
+    </a>
+    <span class="cross_banner cp" data-log="new pc pricing banner 2 cross"></span>
+</div>
+</div>
+<div class="row px-lg-1 px-3 mx-n2 justify-content-between align-items-center">
+<div class="row mx-0 mt-2">
+    <label data-log="new pc file upload" class="file_upload border1 mx-1 d-flex align-items-center justify-content-center cp mb-0 bg_202223" for="fileUpload">
+        
+        <span class="pcn_attach_file"></span>
+        <input class="d-none" id="fileUpload" accept=".txt,.doc,.docx,.odt,.pdf,.rtf,.tex" name="fileUpload" type="file">
+    </label>
+    <div class="social_upload border1 cp mx-1 dropbox" data-log="new pc dropbox"></div>
+    <div class="social_upload border1 cp mx-1 google_drive" onclick="loadPicker()" data-log="new pc gdrive"></div>
+    <div class="d-md-inline-flex d-none align-items-center p-0 pcn_lang border1 mx-1" data-log="new pc tool lang drop down">
+        <button type="button" class="btn p-0 border-0 px-3 w-100 text-md-left" data-toggle="modal" data-target="#myModal">
+            <span class="d-md-inline-block clr_fff">English</span>
+        </button>
+        <div class="modal fade pr-0 lang_model" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0 p-0">
+                        <button type="button" class="close ml-auto" data-dismiss="modal" style="margin-left: auto !important">×</button>
+                    </div>
+                    <div class="modal-body p-1" id="lang_drop_textarea" style="padding-top: 0px !important">
+                        <div class="row mx-0">
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/plagiarism-checker/" class="active_lang">
+                                        English - EN
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/ru/plagiarism-checker/" class="">
+                                        русский - RU
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/ja/plagiarism-checker/" class="">
+                                        日本語 - JA
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/it/plagiarism-checker/" class="">
+                                        Italiano - IT
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/fr/plagiarism-checker/" class="">
+                                        Français - FR
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/pt/plagiarism-checker/" class="">
+                                        Português - PT
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/es/plagiarism-checker/" class="">
+                                        Español - ES
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/de/plagiarism-checker/" class="">
+                                        Deutsche - DE
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/zh/plagiarism-checker/" class="">
+                                        中文 - ZH
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/ar/plagiarism-checker/" class="">
+                                        عربى - AR
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/id/plagiarism-checker/" class="">
+                                        Indonesian - ID
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/tr/plagiarism-checker/" class="">
+                                        Türk - TR
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/ko/plagiarism-checker/" class="">
+                                        Korean - KO
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/vi/plagiarism-checker/" class="">
+                                        Vietnamese - VI
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/nl/plagiarism-checker/" class="">
+                                        Dutch - NL
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/pl/plagiarism-checker/" class="">
+                                        Polish - PL
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/no/plagiarism-checker/" class="">
+                                        Norwegian - NO
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/cs/plagiarism-checker/" class="">
+                                        Czech - CS
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/sv/plagiarism-checker/" class="">
+                                        Swedish - SV
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/ro/plagiarism-checker/" class="">
+                                        Romania - RO
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/da/plagiarism-checker/" class="">
+                                        Danish - DA
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/tl/plagiarism-checker/" class="">
+                                        Filipino - TL
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/th/plagiarism-checker/" class="">
+                                        Thai - TH
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/fi/plagiarism-checker/" class="">
+                                        Finnish - FI
+                                    </a>
+                                </div>
+                                                                                                                                                            <div class="col-md-4 col-6 p-0">
+                                    <a href="https://smallseotools.com/hi/plagiarism-checker/" class="">
+                                        Hindi - HI
+                                    </a>
+                                </div>
+                                                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="row mx-0 mt-2 fw_600 clr_fff">
+    Words Limit/Search: <span id="count_">0</span>/1000
+</div>
+
+<!-- Check by URL and its POPup   ---------------------------------------------------------------------------- -->
+<div class="row mx-0 mt-2">
+    
+    <button data-log="new pc checkByURL" type="button" class="pcn_cbu fw_500 border1 m-1 d-flex align-items-center px-3" data-toggle="modal" data-target="#CheckByUrl">
+     <div class="cbu_img mr-2"></div> Check by URL <div class="cbu_chevron ml-2"></div>
+    </button>
+
+    <div class="modal fade mt-5 pt-5 pr-0" id="CheckByUrl">
+     <div class="modal-dialog modal-lg">
+      <div class="modal-content bg_202223">
+       <div class="modal-header pt-4 pb-0 px-4 bg_202223">
+        <ul class="nav nav-tabs">
+         <li class="nav-item mr-2">
+          <a class="nav-link rounded border-bottom-0 fw_500 clr_fff active" data-toggle="pill" href="#home">
+           <img src="./Assets/icons/pcn_cbu.svg" alt="check URL" class="mr-2">Add URL </a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link rounded border-bottom-0 fw_500 clr_fff" data-toggle="pill" href="#menu1">
+           <img src="./Assets/icons/pcn_eu.svg" alt="" class="mr-2">Exclude URL </a>
+         </li>
+        </ul>
+        <button type="button" class="close clr_fff p-0" data-dismiss="modal">×</button>
+       </div>
+       <div class="modal-body text-center p-md-5 bg_202223 cus_scrollbar">
+        <div class="model_heading clr_fff mb-2 text-left">Enter URL</div>
+        <div class="tab-content">
+         <div id="home" class="tab-pane active">
+          <div class="input-group mb-3 pcn_url_inp bg2B2D2E">
+           <input class="form-control border1 rounded-0 bg2B2D2E clr_fff" placeholder="Insert URL Here" id="by_url" name="by_url" type="url" value="">
+          </div>
+          <label class="default_excludeUrl mb-2 d-flex align-items-center justify-content-start" for="default_excludeUrl">
+           <input id="default_excludeUrl" checked="checked" name="default_excludeUrl" type="checkbox" value="1">
+           <span class="pl-2 clr_fff">By Default Exclude URL</span>
+          </label>
+          <button class="border-0 rounded pcn_exclude_btn text-white" onclick="check_by_url()" type="button">Check by URL</button>
+         </div>
+         <div id="menu1" class="tab-pane fade">
+          <div id="max-exclude-reached" class="d-none alert alert-danger alert-dismissible fade show red_error_msg border-0 text-left mt-2">
+           <button style="right:10px" type="button" class="close">
+            <img src="./Assets/icons/cross.svg" onclick="$('#max-exclude-reached').addClass('d-none')">
+           </button>
+           <img src="./Assets/icons/alert_msg.svg" alt="" class="mr-2">Maximum 10 Exclude URLs are allowed
+          </div>
+          <div id="max-exclude-reached-box">
+           <div class="input-group mb-3 pcn_url_inp bg2B2D2E">
+            <input class="form-control border1 rounded-0 bg2B2D2E clr_fff" placeholder="Insert URL Here" name="exclude_urls[]" type="url" value="">
+            <div class="input-group-append pl-2 exclude_more_urls" onclick="addNewExcludeUrl()">
+             <img src="./Assets/icons/include_url.webp" alt="exclude more">
+            </div>
+           </div>
+          </div>
+          <button onclick="$('#CheckByUrl').modal('hide')" type="button" class="border-0 rounded pcn_exclude_btn text-white">Exclude</button>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div data-log="new pc clear" class="pcn_remove_txt cp border1 m-1 d-md-block d-none" onclick="clear_elements({'v':{'textbox':'','fileUpload':'','by_url':'','exclude_url':''},'t':{'count_':'0','file_upload_status':'Attach File'}},this,'Cleared!')" data-name="Clear?" data-toggle="tooltip" title="" data-original-title="Clear?"></div>
+   </div>
+<!-- Check by URL and its POPup   ---------------------------------------------------------------------------- -->
+
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Button----------------------------------- -->
+<button data-log="new pc check button" name="check_plagiarism" id="check_validation" class="button_blink pcn_pc fw_500 px-1 text-white border-0 m-2 rounded" type="button">
+    <img src="./Assets/icons/search.svg" alt="PRO Pricing" class="img-fluid mr-2" width="25px" height="24px">
+    Check Plagiarism 
+</button>
+
+
+<!-- Details about Tool ================================================================= -->
+<div id="accordion_content" class="contentArea content_heading bg-white p-4"  style="background-color: #fff !important; ">
+    <p>To use this plagiarism checker, please copy and paste your text in the box above, then click on the big blue button that says “Check Plagiarism” then sit back and watch as your article is scanned for duplicate content.</p>
+    <h2>Benefits of SmallSEOTools’ Plagiarism Detector</h2>
+    <p>The plagiarism checker free utility offered on SmallSEOTools’ is second to none due to the advantages it provides to its users. From students to teachers, researchers, writers, publishers, and bloggers, everyone can gain the top benefits of SmallSEOTools’ plagiarism detector, which include the following:</p>
+    <h3>Quick and Hassle-Free</h3>
+    <p>The plagiarism checker online tool available on this platform is a super-fast utility that generates results within a matter of seconds. For using this plagiarism detector, the users won’t have to follow any convoluted procedure. The user-friendly interface of this facility makes the process to check plagiarism free from all kinds of intricacies.</p>
+    <h3>Multi-Platform Supportive</h3>
+    <p>Our plagiarism detector is a web-based tool that can be accessed through any kind of device. You won’t have to install a plugin or software for checking duplication with this plagiarism checker online utility. Whether you have an Android, iOS, Windows, Linux, or Mac device, you can easily access our online plagiarism remover and figure out the instances of plagiarism in a couple of clicks. All you need to check plagiarism online on SmallSEOTools is to connect your device with a stable internet connection.</p>
+    <h3>Free Plagiarism Checker</h3>
+    <p>There are no costs involved with the usage of SmallSEOTools’ plagiarism checker. The users aren’t asked to pay a single penny for the consumption of this online duplicate check service. No matter how many pieces of text you need to check for plagiarism, you can use this plagiarism detector as many times as you desire without facing any restriction or paying any charges.</p>
+    <h3>Find Matching Sources</h3>
+    <p>When it comes to detecting plagiarism, everybody desires to know about the links from where their text matches. The best free plagiarism checker by SmallSEOTools not only detects the plagiarized portions of your text but also provides you with a list of sources from where your entered text is matching. If you want to keep the list of matching sources as evidence, you can download the plagiarism scan report for free with a single click.</p>
+    <h2>FEATURES OF OUR PLAGIARISM CHECKER</h2>
+    <p>A list of key features:</p>
+    <h3>1. Billions of web pages</h3>
+    <p>This tool has the ability to check plagiarism by matching your content against billions of webpages on the Internet. Once you upload your content, it will automatically run it against every existing content on the web within seconds, making it the most sophisticated yet fastest plagiarism scanner you'll ever come across in your lifetime.</p>
+    <h3>2. Automatic rewriting feature</h3>
+    <p>It has an option for automatically rewriting the content you run on it in just one click. If your content contains plagiarized work, all you have to do is click on the rewrite option and you'll be taken to our auto- <a href="https://smallseotools.com/article-rewriter/" data-name="https://smallseotools.com/article-rewriter/">paraphrasing tool</a>, where your content will be updated immediately. This is a built-in feature available right inside the tool for absolutely free. </p>
+    <h3>3. Multiple document formats</h3>
+    <p>Our similarity checker allows you to upload different formats of documents including .doc, .docx, .txt, .tex, .rtf, .odt, and .pdf. This means it does not matter what format your content takes, as long as it is digital, our tool will do the rest of the work.</p>
+    <h3>4. URL integration</h3>
+    <p>With this free online plagiarism test tool, not only are you able to upload different formats of documents, you can also check plagiarism via a website URL. Simply enter the webpage URL and click the " <strong>Check Plagiarism</strong>" button and you're good to go. </p>
+    <h3>5. Reporting option</h3>
+    <p>Our anti-plagiarism engine comes with a reporting option which allows you to download a report of the plagiarism search you run. This means you now have some sort of evidence to send across to the relevant parties and a record to keep. Awesome!</p>
+    <h3>6. Sharing option</h3>
+    <p>How about an option for sharing the plagiarism report generated? Would you like that right INSIDE the tool, too? Well, we got you covered!</p>
+    <h3>7. Multiple languages</h3>
+    <p>This feature allows you to check plagiarism on documents in other languages other than English. So whether your content is written in <a href="https://smallseotools.com/ru/plagiarism-checker/" data-name="https://smallseotools.com/ru/plagiarism-checker/">русский</a>, <a href="https://smallseotools.com/ja/plagiarism-checker/" data-name="https://smallseotools.com/ja/plagiarism-checker/">日本語</a>, <a href="https://smallseotools.com/it/plagiarism-checker/" data-name="https://smallseotools.com/it/plagiarism-checker/">italiano</a>, <a href="https://smallseotools.com/fr/plagiarism-checker/" data-name="https://smallseotools.com/fr/plagiarism-checker/">français</a>, <a href="https://smallseotools.com/pt/plagiarism-checker/" data-name="https://smallseotools.com/pt/plagiarism-checker/">Português</a>, <a href="https://smallseotools.com/es/plagiarism-checker/" data-name="https://smallseotools.com/es/plagiarism-checker/">Español</a>, <a href="https://smallseotools.com/de/plagiarism-checker/" data-name="https://smallseotools.com/de/plagiarism-checker/">Deutsche</a>, <a href="https://smallseotools.com/zh/plagiarism-checker/" data-name="https://smallseotools.com/zh/plagiarism-checker/">中文</a>, our tool can speak your language. </p>
+    <h3>8. Cloud compatibility</h3>
+    <p>Live in the cloud? Our originality checker is able to check content from the cloud, including Google Drive and Dropbox. Simply choose where your content lives in the cloud and pick the particular piece of document you want to run, and our copyright checker will do the rest.</p>
+    <h3>9. Local storage</h3>
+    <p>If your content is rather local, living in a file within your computer, then you can upload it directly from the local storage.</p>
+    <h3>10. Percentage gauges</h3>
+    <p>Once you've uploaded your content and clicked to check for plagiarism, our duplication checker will show you, in percentages, the levels of both plagiarized and unique content in the document. For example, it'll let you know that 82% of the content is unique while 18% is plagiarized.</p>
+    <h3>11. A list-based, sentence-wise result</h3>
+    <p>The tool does not stop at showing you the percentage levels of plagiarized and unique content. It also shows you, in a list format for easy detection, both plagiarized (if any) and unique areas of the content piece, sentence-by-sentence. Plagiarized sentences are shown in red while the unique ones are shown in green for your convenience.</p>
+    <h3>12. Highlighted document view</h3>
+    <p>With just one click, you can also see the result in a document view, where the whole content is displayed in one document and the plagiarized materials are highlighted in red.</p>
+    <h3>13. Ability to view matched results</h3>
+    <p>Right within the tool, you can view the external content that matches the red sentences in your document. Plus, the URL of the external webpage is added for a quick and easy examination of the content.</p>
+    <h3>14. One-click comparison feature</h3>
+    <p>After the results are in, you can click on the "Compare" button on any red (plagiarized) line to go to Google and compare that particular content with similar ones already published on the web. Great for finding where the plagiarized content is coming from.</p>
+    <h3>15. Exclude Specific URL</h3>
+    <p>If you don't want to detect plagiarism for a specific URL? Simply Insert that URL in the Exclude URL box and that'll be done for you automatically, Copied (plagiarized) content from that URL won't be countered as plagiarism.</p>
+    <h3>16. Plagiarism Checker API</h3>
+    <p>If you want to develop a real-time multitasking plagiarism detection system incorporated into your website, then we have your back. The <a href="https://smallseotools.com/plagiarism-checker-api/" data-name="1180-sst">Plagiarism Checker API</a> offers you a great API integration solution. This completely eliminates the need to check each and every article for every student individually and saves you hours upon hours of work and headaches. You can check plagiarism for multiple essays, thesis or assignments of your students in just one click. This also works great for big websites that frequently accept dozens of articles from contributors. </p>
+    <h3>17. Plagiarism Checker WordPress Plugin</h3>
+    <p>The Small SEO Tools Plagiarism Checker also has its version of WordPress plugin for checking plagiarism. With it, you don't need to waste precious time copying and pasting the whole content of your post. Simply install the plugin, and whenever you are working on a new post or page content, click on the “Check Plagiarism” button and the plugin will automatically start checking the full content, sentence-by-sentence. You can also compare plagiarized content within the plugin by clicking on sentences. With this plugin, you don't have to worry about your content being stolen or the search engines penalizing your site for content duplication.</p>
+    <h2>Importance of Plagiarism detection</h2>
+    <p>Whether you know it or not, plagiarism does affect you in some way. It doesn't matter whether you're the content creator or the one who consumes the content, plagiarism affects us all.</p>
+    <p>As a content creator (writer, author, researcher, student, freelancer, blogger, social media manager, etc. It's no news that you should be regularly checking to be sure that nobody is copying your content without your permission or giving you credit.</p>
+    <p>But much more than that, you also have to always run your content on a <a href="https://smallseotools.com/plagiarism-checker/" data-name="https://smallseotools.com/plagiarism-checker/">plagiarism detection tool</a> before publishing or submitting it to be sure that your work does not contain plagiarism. </p>
+    <p>Why? Because plagiarism is an act of academic dishonesty, a breach of journalistic ethics, and above all, a publishing crime.</p>
+    <p>As such, you don't want to fall victim. If your work contains plagiarized content, whether intentionally or by ignorance, you stand to face serious penalties including:</p>
+    <ul>
+     <li>Legal actions</li>
+     <li>Monetary restitution and fines</li>
+     <li>Damaged reputation</li>
+    </ul>
+    <p>This is not to mention other consequences like SEO content duplication penalties and lowered rankings, lost trust, possible academic sanctions, and more.</p>
+    <p>Now, on the other end of the spectrum, as a content consumer or user (reader, professor or teacher who vets students' work, client of freelance writers, etc.), it is equally important to check for plagiarism before accepting or taking action on any content you come across or submitted to you.</p>
+    <p>And that is why we created the <a href="https://smallseotools.com/plagiarism-checker/" data-name="https://smallseotools.com/plagiarism-checker/">Plagiarism Checker</a>
+     <strong>by Small SEO Tools</strong>.
+    </p>
+    <p>This tool is carefully designed to help you easily and quickly detect plagiarism in any digital text-based content.</p>
+    <p>It is used and trusted by millions of people all around the world and can easily boast of being the single most sophisticated, feature-rich, user-friendly content checker online.</p>
+    <p>Yet, we decided to make it 100% free.</p>
+    <h2>YOUR TURN!</h2>
+    <p>Would you like to see all these features for yourself? Start using the tool right now. It is 100% FREE.</p>
+    <p>This premium-level online tool is extremely easy to use, reliable and provides amazingly accurate results. It is useful for checking plagiarism irrespective of whether your content is an academic work, blog post, ebook, news article, term paper, landing page content, website page content, social media content, email newsletter, and so on.</p>
+    <p>Built by our dedicated in-house team of highly talented developers, the Plagiarism Checker delivers results super fast. In fact, you can expect results in as little as 0.83 second for 1,000 words per search.</p>
+    <p>We respect user privacy, and hence do not save your content in our system. Once the tool is done running the plagiarism check on your content, it automatically deletes it from our system immediately.</p>
+    <p>Go to the Plagiarism Checker page to learn more about the tool and also learn how to use it.</p>
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <div>
+     <div>
+      <h3>What is the word limit to check plagiarism?</h3>
+      <div>
+       <div>
+        <p>The different plans of our plagiarism checker allow the users a distinctive word limit to check for plagiarism. In the table given below, we have outlined the word limit permitted in each version.</p>
+        <table class="table table-bordered">
+         <tbody>
+          <tr>
+           <th>Word limit for Plagiarism Checker</th>
+           <th>Plans</th>
+          </tr>
+          <tr>
+           <td>plagiarism checker 1000 words</td>
+           <td>Free</td>
+          </tr>
+          <tr>
+           <td>plagiarism checker 2000 words</td>
+           <td>Basic</td>
+          </tr>
+          <tr>
+           <td>plagiarism checker 5000 words</td>
+           <td>Basic</td>
+          </tr>
+          <tr>
+           <td>plagiarism checker 10000 words</td>
+           <td>Basic</td>
+          </tr>
+          <tr>
+           <td>plagiarism checker 15000 words</td>
+           <td>Classic</td>
+          </tr>
+          <tr>
+           <td>plagiarism checker 20000 words</td>
+           <td>Classic</td>
+          </tr>
+          <tr>
+           <td>plagiarism checker 25000 words</td>
+           <td>Enterprise</td>
+          </tr>
+          <tr>
+           <td>plagiarism checker 30000 words</td>
+           <td>Enterprise</td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h3>Who Uses SmallSEOTools’ Plagiarism Checker?</h3>
+      <div>
+       <div>
+        <p>People involved in any kind of writing task love using SmallSEOTools’ plagiarism checker to ensure their work is 100% original. Students rely on this tool for finding sources from where the text matches to properly provide credits in their assignments and research papers. Teachers also find this tool useful for identifying plagiarism from work submitted by their students and easily figuring out the assignments that contain plagiarism more than the permitted limit.</p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h3>How Can I Get a Premium Subscription of this Plagiarism Checker Online?</h3>
+      <div>
+       <div>
+        <p>You can get the premium subscription of SmallSEOTools’ plagiarism detector by clicking the GoPro button available on the landing page. After accessing the pricing page, you can explore the various plans presented on it and click the subscribe button on the plan you wish to purchase. After that, you can get registered, make the payment with your preferred method, and start enjoying the pro version of the plagiarism checker.</p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h3>Does My Content Remain Secure on SmallSEOTools?</h3>
+      <div>
+       <div>
+        <p>Yes! Our tool makes sure to keep its users’ content 100% safe and secure. The databases of our plagiarism detector have been designed in such a way that they don’t keep the text or files uploaded by any user. As soon as the plagiarism check process is completed, the text entered by the user automatically gets removed from the servers and databases of this free plagiarism checker. In short, SmallSEOTools’ plagiarism detector will never keep or share your data with third parties in any case.</p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h3>What Languages Are Supported by this Plagiarism Detector?</h3>
+      <div>
+       <div>
+        <p>The plagiarism checker online by SmallSEOTools supports 30+ languages. You don’t need to find a specific plagiarism detection tool for checking plagiarism of a text in a language other than English due to the availability of our multi-language supportive plagiarism detector. The top languages supported by this utility include English, Deutsche, Espanol, Italiano, Korean, Francais, and many more.</p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h3>Why Should I Use a Plagiarism Checker Free?</h3>
+      <div>
+       <div>
+        <p>Due to the heavy workload and involvement in the writing process, people aren’t left with enough time to detect and remove plagiarism on their own. You should use a plagiarism checker free online tool to spot instances of duplication without wasting time or investing the effort. This tool generates a plagiarism report and displays plagiarism results instantaneously.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+<!-- Details about Tool ================================================================= -->
+
+
+</form>
+</div>
+
+
+<!-- Plagiarism Checker Ends ================================================================================================ -->
+
+
+
+<!-- Our Projects Starts =========================================================================================== -->
+
+<div class="sticky_stop"></div>
+
+<div class="as_seen bg-white row mx-0 justify-content-center py-4 px-2 border1 border-left-0 border-right-0">
+    <h3 class="fw_600 w-100 text-center mb-3 clr_fff">AS SEEN ON:</h3>
+    
+    <div id="demo" class="carousel slide in_as_seen px-5" data-ride="carousel">
+        <!-- The slideshow------------------------------------ -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row mx-0">
+                    
+                    
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1">
+                        <img src="./Assets/images/Ads/1-to-10/1.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+
+
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/2.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/3.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/4.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/5.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row mx-0">
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/6.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1">
+                        <img src="./Assets/images/Ads/1-to-10/7.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/8.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/9.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                    <span class="col mx-2 d-flex justify-content-center p-2 border1 asseen_mdn">
+                        <img src="./Assets/images/Ads/1-to-10/10.jpg" alt="1" class="   " style="position: relative; width:100%; " >
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev rounded-circle" href="#demo" data-slide="prev" aria-label="data slide previous">
+            <span data-rklazy='{"fullpath":"https://smallseotools.com/webimages/chevron_left.svg","type":"img","alt":"image left","class":"img-fluid"}'></span>
+        </a>
+        <a class="carousel-control-next rounded-circle" href="#demo" data-slide="next" aria-label="data slide next">
+            <span data-rklazy='{"fullpath":"https://smallseotools.com/webimages/chevron_right.svg","type":"img","alt":"image right","class":"img-fluid"}'></span>
+        </a>
+    </div>
+</div>
+
+<!-- Our Projects Ends  =========================================================================================== -->
+
+
+
+
+<!-- Footer Starts ====================================================================================== -->
+
+<div class="main_fpt px-4 pt-4 pb-3 mps bg_f6f8fa row mx-0 justify-content-center">
+    <div class="sub_area">
+        <div class="col-12 px-0 py-3 row mx-0 text-center text-break clr_fff">
+            <div class="col-md-3">
+                <div class="d-inline-block text-left">
+                    <a href="#">
+                        <img src="./Assets/icons/home-icon.png" alt="Image of website logo" class="img-fluid logo_img" width="200" height="31">
+                    </a>
+                                        
+                    <div class="fw_700 fs22 mt-3">Contact Us</div>
+                    
+                    <div><a href="./cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="41323431312e333501322c202d2d32242e352e2e2d326f222e2c">[email&#160;protected]</a></div>
+                    <div class="fw_700 fs22 mt-3">Address</div>
+                    <div>438, Streatham High Road<br>London, UK.<br>SW16 3PX</div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="d-inline-block text-left">
+                    <a class="fw_700 fs22 mt-3 tool_heading"     href="#">AI Writing Generators</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Plagiarism Checker</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">AI Essay Writer</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">AI Writer</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">AI Text Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Title Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Paragraph Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Essay Title Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Plot Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Thesis Statement Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">AI Story Generator</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Conclusion Generator</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-inline-block text-left">
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Terms of Services</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Testimonials</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Contact Us</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">About us</a>
+                    
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Privacy</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-inline-block text-left">
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Refund Policy</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Blog</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">FAQs</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Pricing</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Design Studio</a>
+                    <a class="footer_links clr_fff d-block mb-1" href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0">
+            <div class="col-md-6 p-2">
+                <div class="p-4 text-center row mx-0 align-content-center justify-content-center border1 bg-white mps bg_2f3133">
+                    <div class="sub_headings">You May Like Our Most Popular Tools & Apps</div>
+                    <div class="d-flex justify-content-center fpop_tools mt-3 mb-4">
+                        <a href="#" aria-label="plagiarism checker api" class="d-inline-flex align-items-center justify-content-center rounded-circle mx-1">
+                            <span class="d-block" data-rklazy='{"name":"f_api","type":"background"}'></span>
+                        </a>
+                        
+                        
+                        <a href="#" aria-label="wordpress plagiarism checker" class="d-inline-flex align-items-center justify-content-center rounded-circle mx-1">
+                            <span class="d-block" data-rklazy='{"name":"f_wordpress","type":"background"}'></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-2">
+                <div class="pt-4 pb-3 px-4 text-center border1 bg-white mps bg_2f3133">
+                    <div class="sub_headings">Subscribe to our Newsletter & Stay updated</div>
+                    <div class="input-group mb-3 subs_inp bg_f6f8fa p-1 bg_202223">
+                        <input type="email" name="email" placeholder="Enter your email address" class="form-control rounded-0 border-0 bg_f6f8fa bg_202223 h-100">
+                        <div class="input-group-append">
+                            <!-- <span class="input-group-text">@example.com</span> -->
+                            <button type="submit" class="btn subs_button text-white rounded-0"><span data-rklazy='{"fullpath":"https://smallseotools.com/webimages/subscribe_btn.svg","type":"img","alt":"image right","class":"img-fluid mr-1"}'></span>Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="social_box">
+                        <a href="#" aria-label="facebook" target="_blank" class="d-inline-block mx-1" data-rklazy='{"name":"sub_facebook","type":"background"}'></a>
+                        <a href="#" aria-label="twitter" target="_blank" class="d-inline-block mx-1" data-rklazy='{"name":"sub_twitter","type":"background"}'></a>
+                        
+                        <a href="#" aria-label="youtube" target="_blank" class="d-inline-block mx-1" data-rklazy='{"name":"sub_youtube","type":"background"}'></a>
+                        
+                        <a href="#" aria-label="pinterest" target="_blank" class="d-inline-block mx-1" data-rklazy='{"name":"sub_pinterest","type":"background"}'></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center footer_links clr_fff m-0 mt-2 w-100">Copyright © 2012-2024 by <a href="#" class="footer_links clr_fff">SmallTools.com</a> All Rights Reserved.</p>
+</div>
+
+
+<div class="for_footer_ad">
+</div>			
+
+<div class="new___s_ text_center d-block o-zergnet px303 b px304" data-after="ab_c"></div>
+		<span class="b post-zergnet-wrap" of-click="click"></span>
+		<span class="cold___sa_"></span>
+		
+	
+			<div class="scroll_top border1 bg-white rounded-circle bg_2f3133"></div>
+
+<!-- Footer Ends  ====================================================================================== -->
+
+	
+
+<!-- Script ==================================================== -->
+	<script data-cfasync="false" src="./cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+		var base_url='https://smallseotools.com/';
+		var Processing='Processing...';
+		var Uploading='Uploading...';
+		var Downloading='Downloading...';
+		var Detecting='Detecting...';
+		var Searching='Searching...';
+		var Converting='Converting...';
+		var Checking='Checking...';
+		var Finalizing='Finalizing...';
+	</script>
+	<script src="./app.js"></script>
+	<script src="./myscript.js"></script>
+
+	<script src="./feedback.js"></script>
+
+<!-- Script ====================== -->
+    
+</body>
+</html>
